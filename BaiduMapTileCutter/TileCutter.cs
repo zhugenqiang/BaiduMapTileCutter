@@ -236,17 +236,37 @@ namespace BaiduMapTileCutter
             int totalCols = (int)(upperRightTileCoords.X - bottomLeftTileCoords.X + 1);
             int totalRows = (int)(upperRightTileCoords.Y - bottomLeftTileCoords.Y + 1);
             Console.WriteLine("total col and row: " + totalCols + ", " + totalRows);
+
             for (int i = 0; i < totalCols; i++)
             {
                 for (int j = 0; j < totalRows; j++)
                 {
                     Bitmap img = new Bitmap(256, 256);
+
                     Point eachTileCoords = new Point(bottomLeftTileCoords.X + i, bottomLeftTileCoords.Y + j);
+
                     int offsetX = (int)eachTileCoords.X * 256 + pxDiff.Width + halfWidth;
                     int offsetY = halfHeight - ((int)eachTileCoords.Y * 256 + pxDiff.Height) - 256;
                     copyImagePixel(img, imgFile, offsetX, offsetY);
+
+                    double dx = eachTileCoords.X;
+
+                    double dy = eachTileCoords.Y;
+
+                    dy = bottomLeftTileCoords.Y + (totalRows - j - 1);
+
+
+                    //int hfRows = totalRows / 2;
+                    //if(dy<0)
+                    //{
+                    //    dy = dy + hfRows;
+                    //}
+                    //else
+                    //{
+                    //    dy = dy - hfRows;
+                    //}
                     img.Save(outputPath + "/tiles/" + zoom.ToString()
-                        + "/tile-" + eachTileCoords.X.ToString() + "_" + eachTileCoords.Y.ToString() + ".png");
+                        + "/tile-" + dx.ToString() + "_" + dy.ToString() + ".png");
                     img.Dispose();
                     finishCount++;
                 }

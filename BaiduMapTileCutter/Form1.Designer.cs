@@ -42,71 +42,79 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(33, 74);
+            this.label1.Location = new System.Drawing.Point(44, 92);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 12);
+            this.label1.Size = new System.Drawing.Size(67, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "选择图片";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(33, 112);
+            this.label2.Location = new System.Drawing.Point(44, 140);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 12);
+            this.label2.Size = new System.Drawing.Size(67, 15);
             this.label2.TabIndex = 1;
             this.label2.Text = "路径设置";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(33, 150);
+            this.label3.Location = new System.Drawing.Point(44, 188);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 12);
+            this.label3.Size = new System.Drawing.Size(67, 15);
             this.label3.TabIndex = 2;
             this.label3.Text = "输出类型";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(33, 188);
+            this.label4.Location = new System.Drawing.Point(44, 235);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 12);
+            this.label4.Size = new System.Drawing.Size(67, 15);
             this.label4.TabIndex = 3;
             this.label4.Text = "坐标设置";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(33, 226);
+            this.label5.Location = new System.Drawing.Point(44, 282);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 12);
+            this.label5.Size = new System.Drawing.Size(67, 15);
             this.label5.TabIndex = 4;
             this.label5.Text = "级别设置";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(33, 264);
+            this.label6.Location = new System.Drawing.Point(44, 330);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(53, 12);
+            this.label6.Size = new System.Drawing.Size(67, 15);
             this.label6.TabIndex = 5;
             this.label6.Text = "图层设置";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(33, 302);
+            this.label7.Location = new System.Drawing.Point(44, 378);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(53, 12);
+            this.label7.Size = new System.Drawing.Size(67, 15);
             this.label7.TabIndex = 6;
             this.label7.Text = "开始切图";
             // 
             // btnPrev
             // 
-            this.btnPrev.Location = new System.Drawing.Point(485, 423);
+            this.btnPrev.Location = new System.Drawing.Point(647, 529);
+            this.btnPrev.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnPrev.Name = "btnPrev";
-            this.btnPrev.Size = new System.Drawing.Size(75, 23);
+            this.btnPrev.Size = new System.Drawing.Size(100, 29);
             this.btnPrev.TabIndex = 8;
             this.btnPrev.Text = "上一步";
             this.btnPrev.UseVisualStyleBackColor = true;
@@ -114,9 +122,10 @@
             // 
             // btnNext
             // 
-            this.btnNext.Location = new System.Drawing.Point(566, 423);
+            this.btnNext.Location = new System.Drawing.Point(755, 529);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(75, 23);
+            this.btnNext.Size = new System.Drawing.Size(100, 29);
             this.btnNext.TabIndex = 9;
             this.btnNext.Text = "下一步";
             this.btnNext.UseVisualStyleBackColor = true;
@@ -124,9 +133,9 @@
             // 
             // mainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(653, 458);
+            this.ClientSize = new System.Drawing.Size(871, 572);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnPrev);
             this.Controls.Add(this.label7);
@@ -136,8 +145,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "mainForm";
-            this.Text = "百度地图切图工具";
+            this.Text = "leaflet地图切图工具";
             this.Load += new System.EventHandler(this.mainForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
